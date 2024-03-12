@@ -1,0 +1,10 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  my-react-app:
+    image: my-react-app
+    build:
+      context: .
+    ports:
+      - "8089:80"
