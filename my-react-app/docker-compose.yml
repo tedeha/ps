@@ -8,3 +8,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8089:80"
+networks:
+  default:
+    name: nginx-proxy-manager-x
+    external: true
